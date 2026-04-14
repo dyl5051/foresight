@@ -1,3 +1,5 @@
+import os
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -6,9 +8,15 @@ from .models import Event
 
 app = FastAPI(title="Foresight API", version="0.1.0")
 
+allowed_origins = [
+    "http://localhost:3000",
+]
+if extra := os.environ.get("CORS_ORIGINS"):
+    allowed_origins.extend(o.strip() for o in extra.split(",") if o.strip())
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=allowed_origins,
     allow_methods=["GET"],
     allow_headers=["*"],
 )
