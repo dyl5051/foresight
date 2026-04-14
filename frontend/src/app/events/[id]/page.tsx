@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getEvent } from "@/lib/api";
+import ActorCard from "@/components/ActorCard";
 import CategoryBadge from "@/components/CategoryBadge";
 import ScenarioCard from "@/components/ScenarioCard";
 
@@ -16,6 +17,9 @@ export default async function EventPage({
   } catch {
     notFound();
   }
+
+  const hasProfiles =
+    event.actor_profiles && event.actor_profiles.length > 0;
 
   return (
     <div>
@@ -38,16 +42,31 @@ export default async function EventPage({
         {event.summary}
       </p>
 
-      <div className="mb-6 flex flex-wrap gap-1.5">
-        {event.actors.map((actor) => (
-          <span
-            key={actor}
-            className="rounded bg-gray-100 px-2 py-0.5 text-xs text-gray-500"
-          >
-            {actor}
-          </span>
-        ))}
-      </div>
+      {!hasProfiles && (
+        <div className="mb-6 flex flex-wrap gap-1.5">
+          {event.actors.map((actor) => (
+            <span
+              key={actor}
+              className="rounded bg-gray-100 px-2 py-0.5 text-xs text-gray-500"
+            >
+              {actor}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {hasProfiles && (
+        <>
+          <h2 className="mb-4 text-lg font-semibold">
+            Key Actors &amp; Analysis
+          </h2>
+          <div className="mb-8 grid gap-4 sm:grid-cols-2">
+            {event.actor_profiles!.map((actor) => (
+              <ActorCard key={actor.name} actor={actor} />
+            ))}
+          </div>
+        </>
+      )}
 
       <h2 className="mb-4 text-lg font-semibold">Possible Scenarios</h2>
       <div className="grid gap-4 sm:grid-cols-2">
