@@ -335,340 +335,389 @@ EVENTS: list[Event] = [
         region="Global",
     ),
     Event(
-        id="iran-nuclear-crisis-2026",
-        title="Iran Nuclear Crisis: Diplomacy, Strikes, and the Brink",
+        id="iran-war-2026",
+        title="US-Iran War: Day 46 — Blockade, Broken Ceasefire, and the April 21 Deadline",
         category="politics",
         summary=(
-            "Tensions over Iran's nuclear program have reached their highest "
-            "point since 2012. IAEA inspectors report Iran has enriched uranium "
-            "to 84% purity — a short technical step from weapons-grade 90%. "
-            "The US and Israel have signaled that the window for diplomacy is "
-            "closing, while Iran insists its program is peaceful and demands "
-            "sanctions relief as a precondition for talks. Russia and China "
-            "have blocked further UN Security Council action, and Gulf states "
-            "are quietly pursuing their own hedging strategies. Back-channel "
-            "negotiations via Oman are reportedly underway, but public rhetoric "
-            "on all sides is escalating."
+            "The US-Israel war on Iran is on Day 46. On February 28, the US and "
+            "Israel launched coordinated strikes ('Operation Epic Fury' / "
+            "'Operation Roaring Lion'), killing Supreme Leader Ali Khamenei and "
+            "destroying nuclear and military sites. Iran retaliated with missiles "
+            "on Israel and US bases, and closed the Strait of Hormuz. A fragile "
+            "two-week ceasefire brokered by Pakistan took effect April 8, but "
+            "21 hours of talks in Islamabad (Vance, Witkoff, Kushner vs. "
+            "Araghchi, Ghalibaf) collapsed April 12 over Iran's refusal to "
+            "abandon enrichment. Trump responded by ordering a naval blockade "
+            "of all Iranian ports, now in effect. Oil is above $100/barrel. "
+            "~20,000 vessels are stranded. The ceasefire expires April 21. "
+            "Trump hints talks may resume in Pakistan within two days. "
+            "Casualties: 3,375–7,650+ Iranian dead, 26,500 injured; 41 Israeli "
+            "dead, 7,740 injured; 15 US soldiers killed, 538 wounded; 2,089+ "
+            "dead in Lebanon. Economic damage to Iran: $270B–$1T."
         ),
         actors=[
-            "Ali Khamenei",
+            "Mojtaba Khamenei",
             "Masoud Pezeshkian",
+            "Abbas Araghchi",
             "Donald Trump",
+            "JD Vance",
+            "Steve Witkoff",
             "Benjamin Netanyahu",
-            "Vladimir Putin",
+            "Shehbaz Sharif",
             "Xi Jinping",
-            "Mohammed bin Salman",
-            "Rafael Grossi",
         ],
         actor_profiles=[
             ActorProfile(
-                name="Ali Khamenei",
-                role="Supreme Leader of Iran",
+                name="Mojtaba Khamenei",
+                role="Supreme Leader of Iran (since March 9, 2026)",
                 public_position=(
-                    "Nuclear weapons are forbidden by Islamic decree (fatwa). "
-                    "Iran's enrichment is for energy and medical isotopes. "
-                    "Any attack on Iranian soil will be met with devastating "
-                    "retaliation across the region."
+                    "Vowed revenge on the US and Israel in his first statement "
+                    "as Supreme Leader on March 12. Iran will never surrender "
+                    "its nuclear sovereignty. The war was an act of unprovoked "
+                    "aggression launched during active negotiations."
                 ),
                 likely_accepts=(
-                    "A face-saving deal that lifts oil and banking sanctions "
-                    "in exchange for enrichment caps at 60% and enhanced IAEA "
-                    "monitoring — but not full dismantlement. Needs to frame "
-                    "any agreement as Iran negotiating from strength, not "
-                    "capitulation. Would likely accept freezing at 60% if the "
-                    "IRGC is not designated as a terrorist organization and "
-                    "Iran's regional influence is not on the table."
+                    "An untested leader in an impossible position — his father "
+                    "was assassinated by the countries he's negotiating with. "
+                    "Reports in early April suggest he may be wounded or "
+                    "incapacitated, raising questions about who actually holds "
+                    "decision-making power. If functional, he needs a deal that "
+                    "preserves the regime and can be framed as defiance, not "
+                    "capitulation. Would likely accept a face-saving freeze on "
+                    "enrichment with partial sanctions relief, but cannot be seen "
+                    "as the leader who surrendered the program his father died "
+                    "defending. The IRGC's influence over him is likely stronger "
+                    "than it was over his father."
                 ),
                 incentives=[
-                    "Regime survival is the paramount concern — everything else is subordinate",
-                    "Sanctions relief to quell domestic economic discontent and prevent another 2019-style uprising",
-                    "Maintaining the nuclear hedge as a strategic deterrent without crossing the threshold that triggers a strike",
-                    "Preserving Iran's regional proxy network (Hezbollah, Houthis, Iraqi militias) as asymmetric leverage",
-                    "Legacy: does not want to be the leader who either lost the program or triggered a devastating war",
+                    "Regime survival — a new, untested Supreme Leader during an active war is maximally vulnerable",
+                    "Consolidating personal authority over IRGC hardliners who may view him as a figurehead",
+                    "Ending the blockade before it triggers another domestic uprising (Jan 2026 protests killed thousands)",
+                    "Avenging his father's assassination is both personal and political — inaction weakens his legitimacy",
+                    "Preventing the complete destruction of Iran's remaining nuclear and military infrastructure",
                 ],
             ),
             ActorProfile(
                 name="Masoud Pezeshkian",
                 role="President of Iran",
                 public_position=(
-                    "Iran is ready for diplomacy and has always been open to "
-                    "negotiations. The West must first return to its JCPOA "
-                    "commitments. Sanctions are economic warfare against the "
-                    "Iranian people."
+                    "Iran was attacked during good-faith negotiations — the US "
+                    "and Israel committed an act of war while diplomats were at "
+                    "the table in Geneva. Iran demands war reparations, security "
+                    "guarantees, and recognition of its right to enrich uranium "
+                    "for civilian purposes."
                 ),
                 likely_accepts=(
-                    "Genuinely wants a deal to deliver economic relief and "
-                    "consolidate his reformist base. Would accept significant "
-                    "nuclear constraints if packaged as a 'new JCPOA' rather "
-                    "than a concession. His room to maneuver depends entirely "
-                    "on Khamenei's green light — he can negotiate the details "
-                    "but not the red lines."
+                    "The reformist president who wanted a deal before the war "
+                    "now has far less room to maneuver. His credibility argument "
+                    "— 'diplomacy works' — was shattered on Feb 28 when strikes "
+                    "launched during active negotiations. Nonetheless, he is "
+                    "Iran's most pragmatic senior voice. Would accept a "
+                    "comprehensive ceasefire that includes: enrichment rights at "
+                    "some level, phased sanctions relief, reconstruction aid, "
+                    "and no regime-change language. Cannot accept anything that "
+                    "looks like the terms of surrender."
                 ),
                 incentives=[
-                    "Economic recovery to validate his election — GDP contraction and 40%+ inflation undermine his mandate",
-                    "Building political capital vs. hardliners by delivering tangible results",
-                    "Opening Iran to foreign investment, especially in oil/gas infrastructure",
-                    "Demonstrating that reformists can achieve what hardliners could not",
+                    "Preventing total economic collapse — Iran has sustained $270B–$1T in damage",
+                    "Reopening the Strait of Hormuz before the blockade destroys what's left of the economy",
+                    "Restoring his reformist mandate by ending the war through diplomacy, not military escalation",
+                    "Preventing hardliners from using the war to permanently sideline civilian government",
+                ],
+            ),
+            ActorProfile(
+                name="Abbas Araghchi",
+                role="Foreign Minister of Iran, lead negotiator",
+                public_position=(
+                    "Iran negotiated in good faith across five rounds in 2025 "
+                    "and two rounds in 2026 — the US responded by bombing "
+                    "during the Geneva talks. Iran will not accept what amounts "
+                    "to a surrender document. The nuclear program is a civilian "
+                    "right under the NPT."
+                ),
+                likely_accepts=(
+                    "The most experienced diplomat in the room and the only "
+                    "Iranian official who has been present across all nine "
+                    "rounds of talks. Personally committed to a negotiated "
+                    "outcome. Would accept: enrichment capped below weapons-grade "
+                    "with IAEA monitoring, phased sanctions relief on a clear "
+                    "timeline, Hormuz reopened as part of a package, and "
+                    "exclusion of missiles and proxies from the nuclear deal "
+                    "scope. His red line: no dismantlement of enrichment "
+                    "capability and no transfer of uranium stockpiles abroad."
+                ),
+                incentives=[
+                    "Professional legacy — has been central to Iran's nuclear diplomacy for over a decade",
+                    "Preventing the collapse of the ceasefire before April 21",
+                    "Demonstrating to the IRGC that diplomacy can secure better terms than continued war",
+                    "Keeping Iran's international standing from complete isolation",
                 ],
             ),
             ActorProfile(
                 name="Donald Trump",
                 role="President of the United States",
                 public_position=(
-                    "Iran will never have a nuclear weapon on his watch. "
-                    "Maximum pressure works. Open to the 'biggest deal ever' "
-                    "if Iran agrees to full denuclearization, missile limits, "
-                    "and ending support for proxies."
+                    "The strikes were necessary to prevent a nuclear Iran. "
+                    "Iran's infrastructure will be 'blown to hell' if they "
+                    "don't make a deal. The Hormuz blockade will force Iran "
+                    "to the table. Open to the 'biggest deal ever' if Iran "
+                    "commits to full denuclearization."
                 ),
                 likely_accepts=(
-                    "A grand photo-op deal that he can brand as superior to "
-                    "the JCPOA. In practice, would likely accept a freeze at "
-                    "current enrichment levels with enhanced inspections if it "
-                    "comes with visible Iranian concessions on missiles or "
-                    "proxies he can sell domestically. Less interested in "
-                    "technical nuclear details than in the optics of a "
-                    "historic agreement. Would accept something substantively "
-                    "similar to the JCPOA if it has his name on it."
+                    "Ordered the war but now needs to end it — oil at $100+ "
+                    "is a domestic political crisis. Hinted April 14 that "
+                    "talks could resume within days. In practice, would likely "
+                    "accept a deal that falls short of full dismantlement if "
+                    "it includes: visible destruction of some enrichment "
+                    "infrastructure he can show on TV, Iran's verbal commitment "
+                    "to not pursue weapons, and a signing ceremony he can brand "
+                    "as historic. Less interested in verification details than "
+                    "in the optics. The blockade is both leverage and a trap — "
+                    "if it doesn't produce a deal quickly, the economic "
+                    "blowback to the US and allies grows."
                 ),
                 incentives=[
-                    "A legacy-defining foreign policy 'win' — the deal-maker narrative",
-                    "Preventing a war that could spike oil prices before midterms",
-                    "Outflanking hawkish advisors who push for strikes while retaining their support",
-                    "Keeping oil prices low to support domestic economic messaging",
-                    "Demonstrating unpredictability as a negotiating asset",
+                    "Ending the war with a 'win' narrative before economic damage deepens at home",
+                    "Oil prices above $100 are a direct threat to his domestic approval and midterm prospects",
+                    "20,000 stranded vessels and allied pressure to reopen Hormuz — the blockade has a shelf life",
+                    "Wants to be the president who solved the Iran problem, not the one who started an endless war",
+                    "Balancing hawks in his administration (Hegseth) who want continued strikes against economic reality",
+                ],
+            ),
+            ActorProfile(
+                name="JD Vance",
+                role="Vice President of the United States, led Islamabad delegation",
+                public_position=(
+                    "The US needs 'an affirmative commitment that Iran will "
+                    "not seek a nuclear weapon and will not seek the tools "
+                    "that would enable them to quickly achieve one.' Left "
+                    "Islamabad saying talks ended without agreement."
+                ),
+                likely_accepts=(
+                    "Vance led the 21-hour Islamabad marathon and has the most "
+                    "granular view of where the gaps are. His public framing — "
+                    "'tools to quickly achieve a weapon' — is softer than full "
+                    "dismantlement and may signal the actual US bottom line: "
+                    "enrichment caps well below weapons-grade with intrusive "
+                    "verification, rather than zero enrichment. He is the key "
+                    "conduit between Trump and the negotiating details."
+                ),
+                incentives=[
+                    "Political positioning for a future presidential run — being 'the man who ended the Iran war'",
+                    "Demonstrating diplomatic competence after inheriting a war he didn't start",
+                    "Managing the gap between Trump's maximalist rhetoric and achievable deal terms",
+                ],
+            ),
+            ActorProfile(
+                name="Steve Witkoff",
+                role="Special Envoy, lead US negotiator since 2025",
+                public_position=(
+                    "The US has been consistent in its demands. Iran must "
+                    "dismantle its enrichment program, destroy facilities at "
+                    "Fordow, Natanz, and Isfahan, and transfer stockpiles to "
+                    "third countries."
+                ),
+                likely_accepts=(
+                    "The only US official who has been across all rounds of "
+                    "talks from April 2025 through Islamabad. Understands the "
+                    "technical details better than anyone in the US delegation. "
+                    "Has privately navigated the gap between Trump's public "
+                    "maximalism and the need for a workable agreement. His "
+                    "presence in a second round would signal the US is serious "
+                    "about bridging the gap before April 21."
+                ),
+                incentives=[
+                    "Personal legacy as the envoy who brokered an end to the war",
+                    "Institutional credibility — repeated failures damage the envoy's position",
+                    "Pragmatic interest in a deal that actually holds, not just a signing ceremony",
                 ],
             ),
             ActorProfile(
                 name="Benjamin Netanyahu",
                 role="Prime Minister of Israel",
                 public_position=(
-                    "A nuclear Iran is an existential threat to Israel. All "
-                    "options are on the table. Any deal that leaves Iran with "
-                    "enrichment capability is unacceptable. Israel will act "
-                    "alone if necessary."
+                    "Operation Roaring Lion was a pre-emptive strike to prevent "
+                    "an existential threat. Israel will continue to act to "
+                    "protect its security. Denies that Lebanon was included in "
+                    "the ceasefire — continued strikes in Lebanon after April 8."
                 ),
                 likely_accepts=(
-                    "Privately, a deal that pushes Iran's breakout time back "
-                    "to 6+ months with intrusive inspections would be "
-                    "grudgingly tolerable — though he would never say so "
-                    "publicly. A limited military strike on nuclear facilities "
-                    "(Natanz, Fordow) is his preferred outcome if diplomacy "
-                    "fails, but only with US logistical support or at minimum "
-                    "tacit approval. Does not want a full-scale regional war "
-                    "that draws in Hezbollah and risks Israeli home-front "
-                    "casualties."
+                    "Has already achieved his primary objective: Iran's nuclear "
+                    "infrastructure is severely degraded and Khamenei is dead. "
+                    "Now wants to lock in the gains through a deal that "
+                    "permanently caps Iran's enrichment capability. The Lebanon "
+                    "front is his secondary objective — continued strikes on "
+                    "Hezbollah are an attempt to reshape the regional balance "
+                    "while the window is open. Would accept a deal that keeps "
+                    "Iran's breakout time at 2+ years with permanent IAEA "
+                    "presence and an end to Iranian support for Hezbollah."
                 ),
                 incentives=[
-                    "Political survival — coalition depends on projecting strength on Iran",
-                    "Diverting attention from domestic legal troubles and governance crises",
-                    "Establishing a security legacy: 'the PM who neutralized the Iranian nuclear threat'",
-                    "Maintaining Israel's regional military superiority and nuclear monopoly in the Middle East",
-                    "Leveraging the Iran threat to deepen Abraham Accords and Gulf security partnerships",
+                    "Consolidating the military gains before international pressure forces a premature ceasefire",
+                    "Using the Lebanon ambiguity in the ceasefire to continue degrading Hezbollah",
+                    "Securing a US mutual defense treaty as part of the broader deal",
+                    "Legacy: 'the PM who destroyed Iran's nuclear program and eliminated Khamenei'",
+                    "Domestic political survival — must deliver permanent security, not just a pause",
                 ],
             ),
             ActorProfile(
-                name="Vladimir Putin",
-                role="President of Russia",
+                name="Shehbaz Sharif",
+                role="Prime Minister of Pakistan, ceasefire mediator",
                 public_position=(
-                    "Supports Iran's right to peaceful nuclear energy. "
-                    "Opposes unilateral sanctions and military threats. "
-                    "Calls for a return to multilateral diplomacy within "
-                    "the JCPOA framework."
+                    "Pakistan is an honest broker seeking peace. The ceasefire "
+                    "covers all fronts. Both sides must return to the table "
+                    "before April 21."
                 ),
                 likely_accepts=(
-                    "Happy with managed tension that keeps the US distracted "
-                    "and oil prices elevated. Would support a deal only if "
-                    "Russia is at the table and gets credit as a mediator. "
-                    "Does not actually want Iran to get a weapon — a nuclear "
-                    "Iran would be an unpredictable neighbor — but will block "
-                    "Western-led pressure as long as it serves Russian "
-                    "interests in the broader US confrontation."
+                    "Pakistan brokered the ceasefire and hosted the Islamabad "
+                    "talks — its credibility is on the line. Army Chief Asim "
+                    "Munir is the behind-the-scenes power in the mediation. "
+                    "Pakistan's unique position: a nuclear-armed Muslim-majority "
+                    "state with ties to both the US and Iran, and historical "
+                    "nuclear cooperation with Saudi Arabia. Needs the ceasefire "
+                    "to hold and convert into permanent talks — a collapse would "
+                    "damage Pakistan's standing and risk spillover instability."
                 ),
                 incentives=[
-                    "High oil prices directly fund Russia's war economy and budget",
-                    "US strategic attention on Iran means less bandwidth for Ukraine and NATO expansion",
-                    "Arms sales and nuclear-plant contracts with Iran (Bushehr)",
-                    "Positioning Russia as an indispensable diplomatic player",
-                    "Preventing a precedent where Western pressure forces denuclearization (implications for Russia's own posture)",
+                    "International prestige as the mediator who brokered a major war ceasefire",
+                    "Preventing regional instability from spilling into Pakistan's Balochistan border region",
+                    "Strengthening ties with both the US and Gulf states through successful mediation",
+                    "Distancing Pakistan from its image as a crisis state — rebranding as a diplomatic power",
                 ],
             ),
             ActorProfile(
                 name="Xi Jinping",
                 role="President of China",
                 public_position=(
-                    "China opposes nuclear proliferation but also opposes "
-                    "unilateral sanctions and the use of force. Supports "
-                    "dialogue and the JCPOA framework."
+                    "The US blockade of the Strait of Hormuz is a 'dangerous "
+                    "and irresponsible act' that will further inflame tensions. "
+                    "China opposes the use of force and calls for immediate "
+                    "de-escalation."
                 ),
                 likely_accepts=(
-                    "Will continue buying Iranian oil at a discount regardless "
-                    "of sanctions. Prefers a low-boil crisis that doesn't "
-                    "disrupt Strait of Hormuz shipping or force China to pick "
-                    "sides publicly. Would accept any deal that stabilizes "
-                    "the region and keeps oil flowing, but won't spend "
-                    "political capital to make one happen."
+                    "China is the most affected bystander. The Hormuz closure "
+                    "has disrupted 40% of China's oil imports, and the US "
+                    "blockade directly threatens Chinese-flagged vessels. "
+                    "Beijing's calculus has shifted from passive beneficiary "
+                    "of cheap Iranian crude to active damage control. Would "
+                    "accept any deal that reopens Hormuz immediately. May be "
+                    "willing to pressure Iran privately in exchange for US "
+                    "concessions elsewhere (tariffs, Taiwan). The longer the "
+                    "blockade lasts, the more likely China intervenes "
+                    "diplomatically — or escalates its own naval presence."
                 ),
                 incentives=[
-                    "Discounted Iranian crude — China imports ~1.5M barrels/day from Iran, essential for energy security",
-                    "Strait of Hormuz stability — 40% of China's oil imports transit the strait",
-                    "Avoiding a precedent where US maximum pressure works (implications for Taiwan)",
-                    "Belt and Road investments in Iran and the broader Middle East corridor",
-                    "Maintaining strategic ambiguity as leverage with both the US and Iran",
-                ],
-            ),
-            ActorProfile(
-                name="Mohammed bin Salman",
-                role="Crown Prince of Saudi Arabia",
-                public_position=(
-                    "Saudi Arabia seeks regional stability and supports a "
-                    "diplomatic solution. Has stated that if Iran gets a "
-                    "nuclear weapon, Saudi Arabia will acquire one as well."
-                ),
-                likely_accepts=(
-                    "Privately prefers a US or Israeli strike that degrades "
-                    "Iran's capabilities without Saudi fingerprints. If a deal "
-                    "is reached, wants equivalent nuclear rights (enrichment "
-                    "for civilian purposes) and a US security guarantee. "
-                    "The 2023 China-brokered Saudi-Iran détente was tactical, "
-                    "not a fundamental realignment — MBS still views Iran as "
-                    "the primary regional rival."
-                ),
-                incentives=[
-                    "Preventing an Iranian bomb that would end Saudi Arabia's conventional military superiority",
-                    "Securing US nuclear-cooperation agreement (123 agreement) with enrichment rights",
-                    "Vision 2030 requires regional stability and foreign investment confidence",
-                    "Maintaining leverage in the Abraham Accords / normalization track with Israel",
-                    "Oil price stability — a Hormuz crisis helps short-term revenue but destroys long-term demand",
-                ],
-            ),
-            ActorProfile(
-                name="Rafael Grossi",
-                role="Director General of the IAEA",
-                public_position=(
-                    "Iran must provide full transparency to inspectors. The "
-                    "IAEA has detected particles at 83.7% enrichment. "
-                    "Calls on all parties to preserve the verification "
-                    "framework."
-                ),
-                likely_accepts=(
-                    "Needs any deal to include IAEA access to all declared "
-                    "and suspected sites, continuous monitoring, and "
-                    "resolution of outstanding questions about undeclared "
-                    "nuclear material. Personally invested in being the "
-                    "diplomat who keeps the verification architecture intact "
-                    "through the crisis."
-                ),
-                incentives=[
-                    "Institutional credibility — the IAEA's relevance depends on being the trusted verification body",
-                    "Preventing a precedent where a state enriches to near-weapons-grade without consequences",
-                    "Personal legacy as the DG who navigated the most dangerous nuclear crisis since North Korea",
-                    "Maintaining access — even limited monitoring is better than Iran expelling inspectors entirely",
+                    "Reopening the Strait of Hormuz is an urgent national security priority — energy prices are spiking domestically",
+                    "Preventing the US from establishing a precedent of unilateral naval blockades in critical waterways",
+                    "Protecting ~$30B in annual Chinese-Iranian trade and Belt and Road investments",
+                    "Leveraging the crisis for concessions from the US on trade, Taiwan, or tech restrictions",
+                    "Avoiding a scenario where the US blockade succeeds and validates maximum pressure as a doctrine",
                 ],
             ),
         ],
         scenarios=[
             Scenario(
-                title="Back-Channel Deal via Oman",
+                title="Second Round of Talks Produces Framework Before April 21",
                 description=(
-                    "Secret negotiations through Muscat produce a framework: "
-                    "Iran freezes enrichment at 60%, accepts enhanced IAEA "
-                    "monitoring including cameras at Fordow, and receives "
-                    "phased sanctions relief on oil exports and central bank "
-                    "access. The US rebrands it as a new agreement distinct "
-                    "from the JCPOA. Israel protests but acquiesces after "
-                    "receiving US commitments on a mutual defense treaty."
+                    "Trump's hint of resumed talks materializes. A second round "
+                    "in Islamabad or a neutral venue produces a framework: Iran "
+                    "accepts enrichment caps at 20% (well below weapons-grade) "
+                    "with enhanced IAEA monitoring. The US lifts the naval "
+                    "blockade and agrees to phased sanctions relief. Hormuz "
+                    "reopens. Nuclear dismantlement is deferred to a 'Phase 2' "
+                    "that may never happen. Ceasefire is extended indefinitely."
                 ),
                 probability=0.20,
                 implications=(
-                    "Oil prices drop 8–12% on supply expectations; Iranian "
-                    "rial stabilizes; Gulf states demand matching nuclear "
-                    "rights; Israel-US relations strained but manageable; "
-                    "regional proxy networks remain intact, setting up future "
-                    "friction. Biggest winner: Iranian reformists. Biggest "
-                    "loser: Israeli hawks."
+                    "Oil drops 15–20% within days as Hormuz reopens. Global "
+                    "recession fears ease. Both sides claim victory — Trump "
+                    "calls it 'the greatest deal in history,' Iran frames the "
+                    "enrichment cap as a sovereign choice, not a concession. "
+                    "Israel is unhappy but acquiesces. The underlying issues "
+                    "(missiles, proxies, reconstruction) remain unresolved. "
+                    "Fragile but functional."
                 ),
             ),
             Scenario(
-                title="Israeli Targeted Strike on Nuclear Facilities",
+                title="Ceasefire Expires, War Resumes with Escalation",
                 description=(
-                    "Israel conducts a multi-wave air and cyber operation "
-                    "against Natanz and Fordow enrichment sites, using "
-                    "bunker-busting munitions. The US is informed hours "
-                    "beforehand but does not participate directly. Iran's "
-                    "enrichment capability is set back 2–3 years but not "
-                    "permanently destroyed. Iran retaliates via Hezbollah "
-                    "rocket barrages and Houthi attacks on Gulf shipping."
+                    "No second round materializes. April 21 passes without "
+                    "extension. Trump orders strikes on Iranian infrastructure "
+                    "targets he previously threatened. Iran retaliates against "
+                    "US bases and Gulf shipping. Hezbollah opens a full second "
+                    "front against Israel. The Hormuz closure becomes a "
+                    "military confrontation, not just a blockade."
                 ),
-                probability=0.25,
+                probability=0.20,
                 implications=(
-                    "Oil spikes above $120 within days; global recession risk "
-                    "rises sharply; Strait of Hormuz insurance premiums "
-                    "skyrocket; Iran fully expels IAEA inspectors and "
-                    "reconstitutes a covert program; regional war risk "
-                    "escalates for 3–6 months before a grinding stalemate. "
-                    "Biggest winner: nobody. Biggest loser: global economy "
-                    "and Iranian civilians."
+                    "Oil surges past $130. Global recession becomes near-certain. "
+                    "20,000+ stranded vessels become a humanitarian crisis. US "
+                    "allies (Japan, South Korea, Europe) face acute energy "
+                    "shortages. Domestic anti-war pressure grows in the US. "
+                    "Casualty counts on all sides escalate sharply. "
+                    "Intervention by China or Russia becomes more likely."
                 ),
             ),
             Scenario(
-                title="Managed Ambiguity / Status Quo Drift",
+                title="Ceasefire Extended But No Deal — Frozen Conflict",
                 description=(
-                    "No deal and no strike. Iran remains at 84% enrichment "
-                    "but doesn't cross to 90%. The IAEA maintains minimal "
-                    "monitoring. Sanctions continue but are widely evaded "
-                    "via Chinese and Russian channels. Everyone pretends the "
-                    "situation is sustainable."
+                    "Both sides agree to extend the ceasefire 30–90 days to "
+                    "continue negotiations, but neither makes real concessions. "
+                    "The blockade is partially eased to allow humanitarian "
+                    "shipping. A grinding status quo sets in — no peace, no "
+                    "war, no resolution. Talks continue intermittently."
                 ),
                 probability=0.30,
                 implications=(
-                    "Markets price in a permanent risk premium on Gulf oil; "
-                    "Saudi Arabia accelerates its own nuclear program; "
-                    "Iran's economy stagnates but doesn't collapse; Israel "
-                    "maintains strike readiness as a permanent posture; "
-                    "NPT regime erodes as other states conclude enrichment "
-                    "to near-weapons-grade has no consequences. This is the "
-                    "most likely outcome precisely because it requires no "
-                    "actor to make a hard choice."
+                    "Oil stabilizes in the $90–100 range — elevated but not "
+                    "crisis-level. Markets adapt to a new normal of Hormuz "
+                    "risk premium. Iran's economy deteriorates steadily. "
+                    "Reconstruction is impossible without sanctions relief. "
+                    "Both sides use the pause to rearm. The conflict becomes "
+                    "the Middle East's new frozen war, like Korea after 1953."
                 ),
             ),
             Scenario(
-                title="Iranian Nuclear Breakout",
+                title="China Brokers a Parallel Deal",
                 description=(
-                    "Iran expels remaining IAEA inspectors and enriches to "
-                    "90% at Fordow (deep underground, hard to strike). "
-                    "Within 3–6 months, US intelligence assesses Iran has "
-                    "enough fissile material for 1–2 devices. Iran does not "
-                    "test but maintains deliberate ambiguity."
+                    "Beijing, facing acute energy disruption, intervenes "
+                    "diplomatically with an offer: China guarantees Iranian "
+                    "oil purchases and reconstruction funding in exchange for "
+                    "Iran accepting enrichment limits and reopening Hormuz. "
+                    "China pressures the US to accept by threatening to "
+                    "escalate its naval presence in the Gulf."
                 ),
                 probability=0.15,
                 implications=(
-                    "Middle East enters a nuclear-arms race: Saudi Arabia "
-                    "activates Pakistani warhead arrangements, Turkey and "
-                    "Egypt reconsider their options. US credibility on "
-                    "nonproliferation collapses. Oil markets enter sustained "
-                    "crisis pricing. Israel faces an existential strategic "
-                    "dilemma between striking a nuclear-armed state and "
-                    "accepting deterrence."
+                    "A geopolitical earthquake. China displaces the US as the "
+                    "primary diplomatic power in the Gulf. Iran becomes a "
+                    "Chinese client state. US influence in the Middle East "
+                    "declines permanently. Oil flows resume but through "
+                    "Chinese-dominated channels. Gulf states hedge toward "
+                    "Beijing. The petrodollar system faces its most serious "
+                    "challenge."
                 ),
             ),
             Scenario(
-                title="US-Led Maximum Pressure Collapse of Iran's Economy",
+                title="Iranian Regime Fracture Under Pressure",
                 description=(
-                    "The US successfully pressures China to reduce Iranian "
-                    "oil purchases (via secondary sanctions on Chinese banks), "
-                    "cratering Iran's remaining export revenue. Domestic "
-                    "unrest flares. The regime cracks down violently but "
-                    "eventually returns to negotiations from a position of "
-                    "weakness."
+                    "The combination of Khamenei's assassination, Mojtaba's "
+                    "possible incapacitation, economic collapse, and military "
+                    "devastation triggers an internal power struggle. IRGC "
+                    "hardliners attempt to sideline Pezeshkian and the "
+                    "diplomats. Either a military junta emerges or the regime "
+                    "fragments, creating chaos but also an opening for a "
+                    "fundamentally different deal."
                 ),
-                probability=0.10,
+                probability=0.15,
                 implications=(
-                    "A deal under duress is fragile and breeds revanchism. "
-                    "China-US relations further deteriorate over secondary "
-                    "sanctions. Iranian hardliners are either empowered by "
-                    "nationalist backlash or sidelined by economic desperation. "
-                    "Humanitarian crisis worsens. Oil markets volatile but "
-                    "ultimately bearish as Iranian capitulation is priced in."
+                    "Maximum uncertainty. A military junta could escalate "
+                    "unpredictably or, conversely, a pragmatic general could "
+                    "cut a deal the clerics never would. Regime collapse risks "
+                    "loose nuclear material — a nightmare scenario for all "
+                    "parties. Regional proxy networks lose central coordination. "
+                    "Humanitarian crisis deepens. The 'be careful what you wish "
+                    "for' scenario for regime-change advocates."
                 ),
             ),
         ],
