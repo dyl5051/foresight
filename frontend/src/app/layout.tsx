@@ -31,9 +31,14 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
         <header className="sticky top-0 z-10 border-b border-gray-200 bg-white/80 backdrop-blur">
-          <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
-            <Link href="/" className="text-lg font-bold tracking-tight">
-              Foresight
+          <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
+            <Link href="/" className="flex items-center gap-2">
+              <span className="text-lg font-extrabold tracking-tight">
+                Foresight
+              </span>
+              <span className="rounded bg-gray-900 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">
+                Beta
+              </span>
             </Link>
             <nav className="flex gap-4 text-sm text-gray-500">
               <Link href="/" className="hover:text-gray-900 transition-colors">
@@ -42,7 +47,7 @@ export default function RootLayout({
             </nav>
           </div>
         </header>
-        <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8">
+        <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8">
           {children}
         </main>
         <footer className="border-t border-gray-200 py-4 text-center text-xs text-gray-400">

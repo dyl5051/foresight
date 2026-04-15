@@ -5,7 +5,7 @@ that returns list[Event].  The rest of the app imports `get_events()` and
 `get_event_by_id()` — swap the implementation without touching the API layer.
 """
 
-from .models import ActorProfile, Event, Scenario
+from .models import ActorProfile, Event, Scenario, TimelineEntry
 
 EVENTS: list[Event] = [
     Event(
@@ -615,6 +615,56 @@ EVENTS: list[Event] = [
                 ],
             ),
         ],
+        timeline=[
+            TimelineEntry(
+                date="2026-02-28",
+                label="US-Israel Strikes Begin",
+                description="Operation Epic Fury / Roaring Lion. Khamenei killed. 500+ targets hit in 24 hours.",
+            ),
+            TimelineEntry(
+                date="2026-03-09",
+                label="Mojtaba Khamenei Named Supreme Leader",
+                description="Assembly of Experts elects Khamenei's son. Controversial dynastic succession.",
+            ),
+            TimelineEntry(
+                date="2026-03-12",
+                label="New Leader Vows Revenge",
+                description="Mojtaba's first public statement pledges retaliation against the US and Israel.",
+            ),
+            TimelineEntry(
+                date="2026-03-27",
+                label="Israel Strikes Nuclear Sites",
+                description="Second wave targets Natanz, Fordow, and Isfahan enrichment facilities.",
+            ),
+            TimelineEntry(
+                date="2026-04-08",
+                label="Pakistan-Brokered Ceasefire",
+                description="Two-week ceasefire takes effect. Dispute over whether Lebanon is included.",
+            ),
+            TimelineEntry(
+                date="2026-04-12",
+                label="Islamabad Talks Collapse",
+                description="21-hour marathon ends without agreement. Vance leaves Pakistan. Nuclear enrichment is the sticking point.",
+            ),
+            TimelineEntry(
+                date="2026-04-13",
+                label="US Naval Blockade Begins",
+                description="Trump orders blockade of all Iranian ports. Oil surges above $100. ~20,000 vessels stranded.",
+            ),
+            TimelineEntry(
+                date="2026-04-14",
+                label="Day 46 — Today",
+                description="Trump hints talks may resume within days. China calls blockade 'dangerous and irresponsible.'",
+            ),
+            TimelineEntry(
+                date="2026-04-21",
+                label="Ceasefire Expires",
+                description="Two-week ceasefire deadline. No extension agreed. Risk of resumed hostilities.",
+            ),
+        ],
+        deadline="2026-04-21",
+        deadline_label="Ceasefire expires",
+        featured=True,
         scenarios=[
             Scenario(
                 title="Second Round of Talks Produces Framework Before April 21",

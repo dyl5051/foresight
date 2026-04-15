@@ -13,6 +13,12 @@ export interface ActorProfile {
   incentives: string[];
 }
 
+export interface TimelineEntry {
+  date: string;
+  label: string;
+  description: string;
+}
+
 export interface Event {
   id: string;
   title: string;
@@ -20,6 +26,10 @@ export interface Event {
   summary: string;
   actors: string[];
   actor_profiles: ActorProfile[] | null;
+  timeline: TimelineEntry[] | null;
+  deadline: string | null;
+  deadline_label: string | null;
+  featured: boolean;
   scenarios: Scenario[];
   date: string;
   region: string;
